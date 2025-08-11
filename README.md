@@ -1,29 +1,31 @@
 Remainders-with-Face-Recognition
-Overview
-A smart mirror module that uses facial recognition to identify individual users and display their personalized daily reminders.
+📌 Overview
+A smart mirror application that uses facial recognition to identify users and display their personalized daily reminders. The system integrates real-time face detection with a task management database, making it an innovative solution for personal organization.
 
-Core Features
+✨ Core Features
+🔍 Face Recognition
+Built with Python, OpenCV, and face_recognition (based on dlib).
+Captures live camera input and matches it with stored face data.
 
-Face recognition using Python, OpenCV, and dlib: Real-time camera input is analyzed to detect and identify specific users. 
-GitHub
+🗒 Personalized Reminders
+Retrieves tasks for the recognized user from a MySQL database.
+Shows only current date reminders for better relevance.
 
-Personalized reminders by user: Recognized users receive reminders stored in a database, tailored just for them. 
-GitHub
+🌐 Web Interface
+Flask-powered interface to add and view reminders.
+Secure verification by matching entered name with recognized face.
 
-Technologies Used
-
+🛠 Technologies Used
 Python
+OpenCV & face_recognition
+MySQL (reminder storage)
+Flask (web app + API)
 
-OpenCV, face_recognition (based on dlib)
+💡 Why It's Cool
+Seamlessly blends face recognition with task management.
+Modular design – easy to adapt for other smart devices.
+Built entirely with open-source libraries, encouraging learning and customization.
 
-MySQL or other relational database for storing tasks/reminders
+Modular design – easy to adapt for other smart devices.
 
-Flask for web interface and deployments
-
-Why It's Cool
-
-Delivers a seamless, personalized experience by blending face recognition and task management.
-
-Modular and extensible—easy to integrate into a real smart mirror setup.
-
-Built with accessible, open-source libraries for easy experimentation and learning.
+Built entirely with open-source libraries, encouraging learning and customization.
