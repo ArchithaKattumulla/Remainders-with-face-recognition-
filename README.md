@@ -1,31 +1,45 @@
-Remainders-with-Face-Recognition
-📌 Overview
-A smart mirror application that uses facial recognition to identify users and display their personalized daily reminders. The system integrates real-time face detection with a task management database, making it an innovative solution for personal organization.
+# **Smart Mirror: Personalized Reminders with Face Recognition**
 
-✨ Core Features
-🔍 Face Recognition
-Built with Python, OpenCV, and face_recognition (based on dlib).
-Captures live camera input and matches it with stored face data.
+---
 
-🗒 Personalized Reminders
-Retrieves tasks for the recognized user from a MySQL database.
-Shows only current date reminders for better relevance.
+## **About This Project**
 
-🌐 Web Interface
-Flask-powered interface to add and view reminders.
-Secure verification by matching entered name with recognized face.
+Ever wished your mirror could do more than just show your reflection? This project turns an ordinary mirror into an **intelligent personal assistant**. Using **real-time facial recognition**, the mirror identifies the person standing in front of it and displays **personalized daily reminders** — no login, no buttons, just you and your mirror.
 
-🛠 Technologies Used
-Python
-OpenCV & face_recognition
-MySQL (reminder storage)
-Flask (web app + API)
+---
 
-💡 Why It's Cool
-Seamlessly blends face recognition with task management.
-Modular design – easy to adapt for other smart devices.
-Built entirely with open-source libraries, encouraging learning and customization.
+## **The Data**
 
-Modular design – easy to adapt for other smart devices.
+All reminders are stored in a **MySQL database**, tagged to specific users and dates.
 
-Built entirely with open-source libraries, encouraging learning and customization.
+* **Face images** of registered users are stored locally for recognition.
+* **Tasks/reminders** include a title, description, and date.
+* Data is retrieved in real time whenever a user is recognized.
+
+---
+
+## **What I Did**
+
+* Developed a **face recognition system** using **Python**, **OpenCV**, and **face\_recognition**.
+* Created a **Flask web interface** to add and manage reminders.
+* Integrated **MySQL** for persistent storage of user tasks.
+* Designed a **real-time camera feed system** to identify users instantly.
+* Displayed **daily reminders** only for the recognized person.
+
+---
+
+## **Technologies Used**
+
+* **Python**
+* **OpenCV**
+* **face\_recognition** (dlib)
+* **Flask** (web framework)
+* **MySQL** (database)
+
+---
+
+## **Why This Project is Cool**
+
+* Fully **personalized** — no two users see the same reminders.
+* **Hands-free operation** — perfect for a real smart mirror.
+* Uses **open-source tools** so anyone can learn and build on it.
